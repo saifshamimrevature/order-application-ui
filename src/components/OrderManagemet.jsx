@@ -184,7 +184,8 @@ export default function OrderManagement() {
       );
 
       setIsModalOpen(false);
-      setRefreshKey((prev) => prev + 1);
+      window.location.reload();
+
     } catch (error) {
       console.error("Status update error:", error);
       alert("Failed to update status");
